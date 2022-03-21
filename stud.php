@@ -1,6 +1,9 @@
 <?php
 	header('Content-type: text/html; charset=utf-8');
-	$num = $_GET['c'];
-	$result = ($num * 18/10 + 32) . 'F';
+	$num = $_GET['f'];
+	$result = 1;
+	for ($s=$num; $s>=1; $s--) {    
+  		$result = $result * $s;  
+	};
 	echo $result;
 ?>
